@@ -12,6 +12,7 @@ now = datetime.datetime.now() #to extract the current datatime i.e system dateti
 
 content = "" #content placeholder
 
+# function to scrap and extract data from the web
 def extract_news(url):
     print("Extracting hacker news story...")
     cnt = ""
@@ -35,9 +36,9 @@ print("Composing email ...")
 #update our email details
 SERVER = 'smtp.gmail.com'
 PORT = 587
-FROM = '************'
-TO = '************'
-PASS = '*************'
+FROM = '************' # use your own email id here
+TO = '************' # use the receievers email id here
+PASS = '*************' # use your email password
 
 msg = MIMEMultipart()
 
