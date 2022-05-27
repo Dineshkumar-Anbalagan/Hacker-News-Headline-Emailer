@@ -51,7 +51,7 @@ msg.attach(MIMEText(content, 'html'))
 print('Initializing Server...')
 
 server = smtplib.SMTP(SERVER, PORT)
-server.set_debuglevel(1)
+server.set_debuglevel(1) # it will return the debug logs if set to 1 and returns nothing when set to 0
 server.ehlo()
 server.starttls()
 server.login(FROM, PASS)
